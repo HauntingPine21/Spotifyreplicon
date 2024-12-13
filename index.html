@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
+    <title>Spotify - Reproductor web: música para todos</title>
     <link rel="icon" href="imagen/spotify.png" type="image/x-icon">
     
     <link rel="stylesheet" href="estilos/style.css">
@@ -13,247 +13,722 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+
+
+
 </head>
 <body>
+
+    <!--Es el menu de arriba-->
     <div class="top-menu">
-        <div class="logo">
-            <i class="fab fa-spotify"></i>
-        </div>
-    
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+            </div>
+        
         <div class="top-menu-center">
-            <a href="#" class="home-button">
-                <i class="fas fa-home"></i>
-            </a>
-            <form action="#" method="get" class="search-form">
-                <input type="text" placeholder="¿Qué quieres reproducir?" class="search-bar">
-                <button type="submit" class="search-button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+
+            <div class="inicio">
+                <i class="bi bi-house-fill"></i>
+                <span class="tooltiptext">Inicio</span>
+            </div>
+
+            <div class="busqueda">
+                <div class="lupa">
+                    <i class="bi bi-search"></i>
+                    
+                </div>
+                <div class="barrabus">
+                    <input type="text" placeholder="¿Qué quieres reproducir?" class="search-bar">
+                </div>
+                
+                <div class="archivo">
+                    <i class="bi bi-archive"></i>
+                    <span class="tooltiptext">Explorar</span>
+                </div>
+            </div>
+                
+                
         </div>
-    
+        
         <div class="top-menu-right">
-            <button class="sign-up">Sign Up</button>
-            <button class="log-in">Log In</button>
+            <a class="descarga" href="https://open.spotify.com/download">
+                <div class="instalar">
+                    <div class="icono">
+                        <i class="bi bi-arrow-down-circle"></i>
+                    </div>
+                    <div class="textodes">
+                        <p>Instalar aplicación</p>
+                    </div>     
+                </div>
+            </a>
+
+            <div class="novedad">
+                <i class="bi bi-bell"></i>
+                <span class="tooltiptext">Novedades</span>
+            </div>
+
+            <div class="perfil">
+                <img src="imagen/perfil.png" alt="">
+                <span class="tooltiptext">HauntingPine21</span>
+            </div>
         </div>
     </div>
     
-    <div class="container">
-        <aside class="aside active" id="aside">
-            <div class="head">
-                <i class='bx bx-library' id="menu"></i>  
+<!----------------------------------------------------------------------------------------------------------->
+
+
+<!--Es el menu lateral-->
+    <aside class="aside active" id="aside">
+        
+        <div class="options">
+
+           <div class="head">
+            <i class='bx bx-library' id="menu"></i>  
+        </div>
+
+            <div class="laterales">
+                <img src="imagen/reci3.png">
+                <span class="option"></span>
             </div>
-            <div class="options">
-                <div>
-                    <img src="imagen/reci3.png">
-                    <span class="option"></span>
-                </div>
-                 
-                <div>
-                    <img src="imagen/episodios.png">
-                    <span class="option"></span>
-                </div>
-        
-                <div>
-                    <img src="imagen/reci2.png">
-                    <span class="option"></span>
-                </div>
-        
-                <div>
-                    <img src="imagen/reci4.png">
-                    <span class="option"></span>
-                </div>
-        
-                <div>
-                    <img src="imagen/especial3.png">
-                    <span class="option"></span>
-                </div>
-                <div>
-                    <img src="imagen/reci6.png">
-                    <span class="option"></span>
-                </div>
-                <div>
-                    <img src="imagen/especial2.png">
-                    <span class="option"></span>
-                </div>
-              
+             
+            <div class="laterales">
+                <img src="imagen/episodios.png">
+                <span class="option"></span>
             </div>
-        </aside>
-        <main class="main-content">
+    
+            <div class="laterales">
+                <img src="imagen/reci2.png">
+                <span class="option"></span>
+            </div>
+    
+            <div class="laterales">
+                <img src="imagen/reci4.png">
+                <span class="option"></span>
+            </div>
+    
+            <div class="laterales">
+                <img src="imagen/especial3.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/reci6.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi1.png">
+                <span class="option"></span>
+            </div>
+
+            <div class="laterales">
+                <img src="imagen/artis1.jpg">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/Desenfocao.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/DjWrapped.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi2.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi3.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi4.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi5.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi6.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/emi7.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/MiNuevoYo.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/Mirada.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/RadarDeNovedades.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/mixdiario3.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/especial2.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/SauceBoyz.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/TheAcademySegunda.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/Thegiaant.png">
+                <span class="option"></span>
+            </div>
+            <div class="laterales">
+                <img src="imagen/ThisIsBabi.png">
+                <span class="option"></span>
+            </div>
+           
+            <div class="vacio"></div>
+
+          
+        </div>
+    </aside>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+    <!--Es el centro de la pagina-->
+        <div class="main-content">
+
+            <div class="seccionbotontop">
+                <div class="botontop">
+                    <button class="botonarriba agarre">Todo</button>
+                    <button class="botonarriba">Música</button>
+                    <button class="botonarriba">Podcast</button>
+                </div>
+            </div>
             <section class="artist-section">
-                <h2>Artistas del momento <a href="#" class="view-all">Ver todos</a></h2>
+                
                 
                 <div class="artist-list">
 
-                    <img src="imagen/artis1.jpg" alt="Artista 1" class="artist-image">
-                    <img src="imagen/artis2.jpg" alt="Artista 3" class="artist-image">
-                    <img src="imagen/artis3.jpg" alt="Artista 3" class="artist-image">
-                    <img src="imagen/artis4.jpeg" alt="Artista 1" class="artist-image">
-                    <img src="imagen/artis5.png" alt="Artista 2" class="artist-image">
-                    <img src="imagen/artis6.jpeg" alt="Artista 3" class="artist-image">
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/reci3.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>Tus me gusta</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/Desenfocao.png" alt=""></div>
+                        </div>                        
+                        <div class="texto">
+                            <div class="palabra"><p>Desenfocao'</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/RadarDeNovedades.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>Radar De Novedades</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/TopDeCanciones.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>Tu Top De Canciones 2024</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/reci1.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>Duelo</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/DjWrapped.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>DJ:Wrapped</p></div>
+                        </div>
+                    </div>
+
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/mixdiario6.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>Mix diario 6</p></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mixarriba">
+                        <div class="foto">
+                            <div class="foti"><img src="imagen/MiNuevoYo.png" alt=""></div>
+                        </div>
+                        <div class="texto">
+                            <div class="palabra"><p>Mi Nuevo Yo</p></div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
-
+<!--CREADOR PARA TI -------------------------------------------------------->
             <section class="album-section">
                 <h2>Creados para ti<a href="#" class="view-all">Mostrar todos</a></h2>
                 <div class="album-list">
                     <div class="albumes">
-                        <img src="imagen/especial1.png" alt="Álbum 1" class="album-image">
-                        <p>Escucha las ultimas novedades</p>
+                        <img src="imagen/mixdiario1.png" alt="Álbum 1" class="album-image">
+                        <p>Mora, Rauw Alejandro,<br>Feid y más</p>
                     </div>
 
                     <div class="albumes">
-                        <img src="imagen/especial2.png" alt="Álbum 1" class="album-image">
-                        <p>Todo tipo de música, <br>seleccionada por tu propio...</p>
+                        <img src="imagen/mixdiario2.png" alt="Álbum 1" class="album-image">
+                        <p>Fuerza Regida, Peso<br>Pluma, Los gemelos De...</p>
                     </div>
 
                     <div class="albumes">
-                        <img src="imagen/especial3.png" alt="Álbum 1" class="album-image">
-                        <p>Ozuna, Rauw Alejandro, <br>Anuel AA y más</p>
+                        <img src="imagen/mixdiario3.png" alt="Álbum 1" class="album-image">
+                        <p>Nanpa Básico, Gera MX, <br>Alemán y más</p>
                     </div>
 
                     <div class="albumes">
-                        <img src="imagen/especial4.png" alt="Álbum 1" class="album-image">
-                        <p>Tu combinado semanal de <br> música freca. Temas...</p>
+                        <img src="imagen/mixdiario4.png" alt="Álbum 1" class="album-image">
+                        <p>Duki, YSY A, Paulo<br>Londra y más</p>
                     </div>
 
+                    <div class="albumes">
+                        <img src="imagen/djlivi.png" alt="Álbum 1" class="album-image">
+                        <p>La música que quieras <br>seleccionada por tu...</p>
+                    </div>
+                    <div class="albumes">
+                        <img src="imagen/descubrimientosemanal.png" alt="Álbum 1" class="album-image">
+                        <p>Tu mix semanal de <br> música nueva.y...</p>
+                    </div>
+                    <div class="albumes">
+                        <img src="imagen/radar.png" alt="Álbum 1" class="album-image">
+                        <p>Catch all the latest music<br>from artists you follow...</p>
+                    </div>
                 </div>
             </section>
 
+<!--MIXES MAS ESCUCHADOS---------------------------------------------------------->
+ 
+
             <section class="album-section">
-                <h2 class="titu">Emisoras recomendadas<a href="#" class="view-all">Mostrar todos</a></h2>
+                <h2 class="titu">Tus mixes más escuchados<a href="#" class="view-all">Mostrar todos</a></h2>
+                <div class="album-list">
+                    <div class="reciente">
+                        
+                        <div class="albumes">                    
+                            <img src="imagen/nanpabasicomix.png" alt="Álbum 1" class="album-image">                           
+                            <p>Rels B, Santa Fe Klan y<br> El Malilla</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/juniorhmix.png" alt="Álbum 1" class="album-image">
+                            <p>Peso Pluma, El Padrinito<br>Toys y Tito Double P</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/mixreggaeton.png" alt="Álbum 1" class="album-image">
+                            <p>Myke Towers, Ele A El<br> Dominio, J Abdiel y más</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/mixdecorrido.png" alt="Álbum 1" class="album-image">
+                            <p>Gabito Ballesteros, Tito<br>Double P, Oscar Maydo...</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/mixdecada2010.png" alt="Álbum 1" class="album-image">
+                            <p>Nanpa Básico, Ariel<br>Camacho y Los Plebes</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/mixlatino.png" alt="Álbum 1" class="album-image">
+                            <p>Rvssian, Rels B, Alvaro<br>Diaz y más</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/natamix.png" alt="Álbum 1" class="album-image">
+                            <p>El Padrinito Toys, Tito<br>Double P y Calle 24</p>
+                        </div> 
+                        <div class="albumes">                    
+                            <img src="imagen/mixderomantica.png" alt="Álbum 1" class="album-image">
+                            <p>Ha*Ash, Kalimba, Mon<br>Laferte y más</p>
+                        </div> 
+                        <div class="albumes">                    
+                            <img src="imagen/mixmelancolica.png" alt="Álbum 1" class="album-image">
+                            <p>Eladio Carrion, Rels B,<br>Adrian L Santos y más</p>
+                        </div> 
+                       
+                        
+                    </div>
+                </div>
+            </section>
+
+<!--ESTACIONES RECOMENDADAS---------------------------------------------------------------------------------->
+            <section class="album-section">
+                <h2 class="titu">Estaciones recomendadas<a href="#" class="view-all">Mostrar todos</a></h2>
+                <div class="album-list">
+                    <div class="reciente">
+                        
+                        <div class="albumes">                    
+                            <img src="imagen/radiogerardo.png" alt="Álbum 1" class="album-image">
+                            <p>Con Los Plebes del<br>Rancho de Ariel...</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/radioalfredo.png" alt="Álbum 1" class="album-image">
+                            <p>Con Julión Álvarez y su<br>Norteño Banda, Gerardo...</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/radiojulion.png" alt="Álbum 1" class="album-image">
+                            <p>Con Alfredo Olivas<br>Edwin Luna y La...</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/radiotercer.png" alt="Álbum 1" class="album-image">
+                            <p>Con El de La Guitarra<br>Herencia de Patrones</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/radiofuerza.png" alt="Álbum 1" class="album-image">
+                            <p>Con Xavi, Peso Pluma,<br>Tito Double P y más</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/radiojuniorh.png" alt="Álbum 1" class="album-image">
+                            <p>Con Natanael Cano, Peso<br>Pluma, Xavi y más</p>
+                        </div>
+
+                        <div class="albumes">                    
+                            <img src="imagen/radiovirlan.png" alt="Álbum 1" class="album-image">
+                            <p>Con Remmy Valenzuela,<br>Alfredo Olivas, Cornelio...</p>
+                        </div> 
+                        <div class="albumes">                    
+                            <img src="imagen/radiocalle24.png" alt="Álbum 1" class="album-image">
+                            <p>Con Xavi, Chino Pacas,<br>Tito Double P y más</p>
+                        </div> 
+                        <div class="albumes">                    
+                            <img src="imagen/radiomarca.png" alt="Álbum 1" class="album-image">
+                            <p>Con Peso Pluma, Grupo<br> Los de la O, Edgardo...</p>
+                        </div> 
+                       
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <section class="album-section">
+                <h2 class="titu">Vuelve a tu música<a href="#" class="view-all">Mostrar todos</a></h2>
                 <div class="album-list">
                    <div class="emisoras">
+                        <div class="albumes">
+                            <img src="imagen/djlivi.png" alt="Álbum 1" class="album-image">
+                            <p>La mpusica que quieras,<br>seleccionada por tu...</p>
+                        </div>
 
-                    <div class="albumes">
-                        <img src="imagen/emi1.png" alt="Álbum 1" class="album-image">
-                        <p>Con Xavi. Peso pluma, Tito<br>
-                        Double P y más</p>
-                    </div>
+                        <div class="albumes">
+                            <img src="imagen/cosanuestra.png"alt="Álbum 1" class="album-image">
+                            <p>Rauw Alejandro,Alexis<br>y Fido</p>
+                        </div>
 
-                    <div class="albumes">
-                        <img src="imagen/emi2.png"alt="Álbum 1" class="album-image">
-                        <p>Con Plan B, Don Omar, Wisin<br>y Yandel y más</p>
-                    </div>
+                        <div class="albumes">
+                            <img src="imagen/TopDeCanciones.png"alt="Álbum 1" class="album-image">
+                            <p>Escucha de nuevo tus<br>mas reproducidas </p>
+                        </div>
 
-                    <div class="albumes">
-                        <img src="imagen/emi3.png"alt="Álbum 1" class="album-image">
-                        <p>Con Quevedo, Bad Bunny,<br> KAROL G y más</p>
-                    </div>
+                        <div class="albumes">
+                            <img src="imagen/top2023.png" alt="Álbum 1" class="album-image">
+                            <p>Spotify Wrapped<br>presents the songs you...</p>
+                        </div>
 
-                    <div class="albumes">
-                        <img src="imagen/emi4.png" alt="Álbum 1" class="album-image">
-                        <p>Con Peso Pluma, Xavi, Tito<br> Double P y más</p>
-                    </div>
+                        <div class="albumes">
+                            <img src="imagen/cosanuestra.png" alt="Álbum 1" class="album-image">
+                            <p>Cosa Nuestra<br>Rauw Alejandro</p>
+                        </div>
 
-                    <div class="albumes">
-                        <img src="imagen/emi5.png" alt="Álbum 1" class="album-image">
-                        <p>Con Xavi, Peso Pluma, Tito <br> Double P, y más</p>
-                    </div>
+                        <div class="albumes">
+                            <img src="imagen/nadie.png" alt="Álbum 1" class="album-image">
+                            <p>Tito Double P</p>
+                        </div>
 
-                    <div class="albumes">
-                        <img src="imagen/emi6.png" alt="Álbum 1" class="album-image">
-                        <p>Con Bad Bunny, Quevedo, <br> JHAYCO y más</p>
-                    </div>
-
-                    <div class="albumes">
-                        <img src="imagen/emi7.png" alt="Álbum 1" class="album-image">
-                        <p>Con Peso Pluma, Tito Double <br> P, Natanael Cano y más</p>
-                    </div>
-                    
-                    
+                        <div class="albumes">
+                            <img src="imagen/reci7.png" alt="Álbum 1" class="album-image">
+                            <p>Como pacman<br> Alemán, Gera MX</p>
+                        </div>
+                        
+                        <div class="albumes">
+                            <img src="imagen/thiistatiana.png" alt="Álbum 1" class="album-image">
+                            <p>This is Tatiana. Sus<br>mejores éxitos, todos e...</p>
+                        </div>
+                        <div class="albumes">
+                            <img src="imagen/henry.png" alt="Álbum 1" class="album-image">
+                            <p>Henry<br>Jesse Baez</p>
+                        </div>
+                        
       
-                </div>
-                </div>
-            </section> 
-
-            <section class="album-section">
-                <h2 class="titu">Escuchados recientemente<a href="#" class="view-all">Mostrar todos</a></h2>
-                <div class="album-list">
-                <div class="reciente">
-                    
-                    <div class="albumes">                    
-                        <img src="imagen/reci1.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Duelo</h2>
-                        <p>Nanpa Básico</p>
                     </div>
-
-                    <div class="albumes">                    
-                        <img src="imagen/reci2.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Mix diario 5</h2>
-                        <p>Duki, Bizarrap, YSY A y más</p>
-                    </div>
-
-                    <div class="albumes">                    
-                        <img src="imagen/reci3.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Canciones que te gustan</h2>
-                        <p>2416 canciones</p>
-                    </div>
-
-                    <div class="albumes">                    
-                        <img src="imagen/reci4.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Mix diario 3</h2>
-                        <p>Gera MX, Robot95, Alemán y <br>más</p>
-                    </div>
-
-                    <div class="albumes">                    
-                        <img src="imagen/reci5.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Mix diario 2</h2>
-                        <p>Ozuna, Rauw Alejandro, <br> Anuel AA y más</p>
-                    </div>
-
-                    <div class="albumes">                    
-                        <img src="imagen/reci6.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Mix diario 4</h2>
-                        <p>Mora, Feid, Sech y más</p>
-                    </div>
-
-                    <div class="albumes">                    
-                        <img src="imagen/reci7.png" alt="Álbum 1" class="album-image">
-                        <h2 class="recien">Como Pacman</h2>
-                        <p>Alemán, Gera Mx</p>
-                    </div> 
-
-                </div>
                 </div>
             </section>
-        </main>
-    </div>
 
-<!-- HTML -->
+            
+        
+        </div>
+
+        <nav class="finales">
+            <div class="creditos-finales">
+
+                <div class="compania">
+                    
+                    <p class="titulo-credito">Compañia</p>
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.spotify.com/mx/about-us/contact/">Acerca de</a>
+                    </span>
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.lifeatspotify.com/" >Empleo</a>
+                    </span>
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://newsroom.spotify.com/">For the Record</a>
+                    </span>                    
+                    
+                </div>
+
+                <div class="comunidades">      
+                    <p class="titulo-credito">Comunidades</p>
+                    
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://artists.spotify.com/home">Para artistas</a>
+                    </span>
+                    
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://developer.spotify.com/">Desarrolladores</a>
+                    </span>
+                    
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://ads.spotify.com/es-MX/">Publicidad</a>
+                    </span>
+                    
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://investors.spotify.com/home/default.aspx">Inversionistas</a>
+                    </span>
+                    
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://spotifyforvendors.com/">Proveedores</a>
+                    </span>
+                    
+                </div>
+
+                <div class="enlaces-utiles">
+                    <p class="titulo-credito">Enlaces útiles</p>
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://support.spotify.com/mx/">Ayuda</a>
+                    </span>
+
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.spotify.com/mx/download/windows/">App móvil gratis</a>
+                    </span>
+
+                </div>
+
+                <div class="planes-de-spotify">
+                    <p class="titulo-credito">Planes de Spotify</p>
+                    
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.spotify.com/mx/premium/#ref=spotifycom_footer_premium_individual">Premium Individual</a>
+                    </span>
+
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.spotify.com/mx/duo/#ref=spotifycom_footer_premium_duo">Premium Duo</a>
+                    </span>
+
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.spotify.com/mx/family/#ref=spotifycom_footer_premium_family">Premium Familiar</a>
+                    </span>
+
+                    <span class="link-enlaces-finales">
+                        <a class="enlaces-finales" href="https://www.spotify.com/mx/student/#ref=spotifycom_footer_premium_student">Premium para Estudiantes</a>
+                    </span>
+
+                    <span class="link-enlaces-finales">
+                    <a class="enlaces-finales" href="https://www.spotify.com/mx/free/#ref=spotifycom_footer_free">Versión gratuita</a>
+                    </span>
+                    
+                </div>
+            </div>
+
+            <div class="sociales">
+                
+                <div class="botonsocial">
+                    <a type="button" href="https://www.instagram.com/spotify" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="botonsocial">
+                    <a type="button" href="https://x.com/spotify" target="_blank">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="botonsocial">
+                    <a type="button" href="https://www.facebook.com/SpotifyMX/?brand_redir=6243987495" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+<!--------------------------------------------------------------------------------------------------------------->
+
+<!--Es la parte de abajo de la pagina-->
 <footer class="spotify-footer">
     <div class="song-info">
-      <img src="imagen/joji.jpg" alt="JojiSong" class="cover-art" />
+      <img src="imagen/Amapola.png" alt="AmapolaFondo" class="cover-art" />
       <div class="song-details">
-        <span class="song-name">Ew</span>
-        <span class="artist-name">Joji</span>
+        <span class="song-name">Amapola</span>
+        <span class="artist-name">Natanael Cano, Nueva H</span>
       </div>
     </div>
   
     <div class="playback-section">
       <div class="playback-controls">
-        <button class="control-button" id="shuffle"><i class="bi bi-shuffle"></i></button>
-        <button class="control-button" id="previous"><i class="bi bi-skip-start"></i></button>
-        <button class="control-button" id="play"><i class="bi bi-play-circle"></i></button>
-        <button class="control-button" id="next"><i class="bi bi-skip-end"></i></button>
-        <button class="control-button" id="repeat"><i class="bi bi-repeat"></i></button>
+
+        
+            <button class="inactive-buttons" id="shuffle">
+                <i class="bi bi-shuffle"></i>
+            </button>
+
+            <button class="progress-buttons" id="previous">
+                <i class="bi bi-skip-start-fill"></i>
+            </button>
+            
+            <button class="pause-button" id="play">
+                <i class="bi bi-pause"></i>
+            </button>
+
+            <button class="progress-buttons" id="next">
+                <i class="bi bi-skip-end-fill"></i>
+            </button>
+
+            <button class="inactive-buttons" id="repeat">
+                <i class="bi bi-repeat"></i>
+            </button>
+
       </div>
   
       <!-- Barra de progreso -->
       <div class="progress-bar-container">
         <span class="current-time">0:00</span>
         <input type="range" class="progress-bar" min="0" max="100" value="0" />
-        <span class="total-time">3:45</span>
+        <span class="total-time">3:00</span>
       </div>
     </div>
   
+
+
+
+
+
     <div class="volume-control">
-      <button class="control-button" id="mute">🔇</button>
-      <input type="range" min="0" max="100" value="50" class="volume-slider" />
+
+        <div class="botonesabajo">
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-play" viewBox="0 0 16 16">
+                        <path d="M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z"/>
+                        <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                        <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+                        <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                      </svg>
+                </button>
+            </div>
+           
+
+        </div>
+
+        <div class="barra">
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <i class="bi bi-volume-down"></i>
+                </button>
+            </div>
+            <div class="vlmen">
+                <input type="range" min="0" max="100" value="0" class="volume-slider" />
+            </div>
+        </div>
+
+        <div class="botonesabajo">
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16">
+                        <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0"/>
+                        <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086z"/>
+                      </svg>
+                </button>
+            </div>
+            <div class="botonsonido">
+                <button class="control-button-bottom" id="mute">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
+                      </svg>
+                </button>
+            </div>
+      
     </div>
+
   </footer>
-  
+
   
 <script src="menu.js"></script>
 </body>

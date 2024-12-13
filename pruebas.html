@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollbar Personalizado en un Div</title>
+  <style>
+    /* Estilo general del div */
+    .scrollable-div {
+      width: 300px;   /* Ancho del contenedor */
+      height: 200px;  /* Alto del contenedor */
+      overflow: auto; /* Habilita el scroll si el contenido supera las dimensiones */
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 2px solid #000;
+    }
+
+    /* Personalización del scrollbar dentro del div */
+    .scrollable-div::-webkit-scrollbar {
+      width: 8px;   /* Ancho de la barra vertical */
+      height: 8px;  /* Altura de la barra horizontal */
+    }
+
+    .scrollable-div::-webkit-scrollbar-track {
+      background: black; /* Fondo del track */
+    }
+
+    .scrollable-div::-webkit-scrollbar-thumb {
+      background: white; /* Color del thumb */
+      border-radius: 4px; /* Bordes redondeados */
+    }
+
+    .scrollable-div::-webkit-scrollbar-thumb:hover {
+      background: #555; /* Color al pasar el mouse */
+    }
+  </style>
+</head>
+<body>
+  <h1>Scrollbar dentro de un Div</h1>
+  <div class="scrollable-div">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in nisi sem. Integer nec arcu ut mauris sagittis lacinia non non ipsum. Nulla facilisi. Phasellus vehicula turpis id arcu congue, eget aliquam sapien vestibulum. 
+    <br><br>
+    Proin a risus nec ligula ornare tempor. Etiam porttitor erat et massa tincidunt, in vestibulum nisi scelerisque. Integer pharetra sollicitudin nunc ut auctor. Nam et fermentum sem. Aliquam erat volutpat.
+  </div>
+</body>
+</html>
