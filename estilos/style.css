@@ -1233,3 +1233,18 @@ width: 200px;
   width: 700px;
 }
 }
+
+
+
+
+
+@media (max-width: 958px) {
+  /* Reduce la altura de la parte superior para pantallas pequeñas */
+ 
+  .search-bar{
+    width: 90px;
+  }
+  .search-bar::placeholder{
+    visibility: hidden;
+  }
+}
